@@ -60,11 +60,11 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.search),
+        child: Icon(Icons.add),
+        backgroundColor: Colors.black12,
         onPressed: () {
           _navigateAndDisplaySelection(context);
         },
-
       ),
 
 

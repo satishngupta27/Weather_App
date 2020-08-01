@@ -5,7 +5,19 @@ class SelectionScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Pick an option'),
+          actions: <Widget>[
+            Padding(
+                padding: EdgeInsets.only(right: 20.0),
+                child: GestureDetector(
+                  onTap: () {},
+                  child: Icon(
+                    Icons.add,
+                    size: 26.0,
+                  ),
+                )),
+          ],
+          title: Text('Pick a City'),
+          backgroundColor: Colors.red,
         ),
         body: Column(
           children: <Widget>[
@@ -27,15 +39,33 @@ class SelectionScreen extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: Text("Vanaras"),
+                    title: Text("Vanarasi"),
                     onTap: () {
-                      Navigator.pop(context, 'Vanaras');
+                      Navigator.pop(context, 'Vanarasi');
                     },
                   ),
                   ListTile(
                     title: Text("Mumbai"),
                     onTap: () {
                       Navigator.pop(context, 'Mumbai');
+                    },
+                  ),
+                  ListTile(
+                    title: Text("Sitapur"),
+                    onTap: () {
+                      Navigator.pop(context, 'Sitapur');
+                    },
+                  ),
+                  ListTile(
+                    title: Text("Lucknow"),
+                    onTap: () {
+                      Navigator.pop(context, 'Lucknow');
+                    },
+                  ),
+                  ListTile(
+                    title: Text("Gorakhpur"),
+                    onTap: () {
+                      Navigator.pop(context, 'Gorakhpur');
                     },
                   ),
                 ],
